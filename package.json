@@ -1,0 +1,22 @@
+{
+  "name": "dianagloster",
+  "version": "1.0.0",
+  "description": "DIana Gloster WEBSITE",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexMcDee/Diana.git"
+  },
+  "author": "M Kravalis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexMcDee/Diana/issues"
+  },
+  "homepage": "https://github.com/AlexMcDee/Diana#readme",
+  "dependencies": {
+    "angular-cookies": "^1.6.5"
+  }
+}

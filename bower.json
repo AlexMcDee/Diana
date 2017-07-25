@@ -1,0 +1,23 @@
+{
+  "name": "dianagloster",
+  "description": "DIana Gloster WEBSITE",
+  "main": "index.js",
+  "authors": [
+    "M Kravalis"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/AlexMcDee/Diana",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.5",
+    "angular-route": "^1.6.5",
+    "a0-angular-storage": "^0.0.15"
+  }
+}
