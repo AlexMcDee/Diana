@@ -14,7 +14,10 @@
             .when('/', {
                 templateUrl: 'templates/home.html',
                 controller: 'HomeController',
-                controllerAs: 'vm'
+                controllerAs: 'vm',
+                data: {
+                    bodyClass: 'auth'
+                }
             })
             .when('/aboutme', {
                 templateUrl: 'templates/aboutme.html',
@@ -55,6 +58,17 @@
 
     run.$inject = ['$rootScope', '$location', '$cookies', '$http', 'UserService'];
     function run($rootScope, $location, $cookies, $http, UserService) {
+
+        $rootScope.$on('$routeChangeSuccess', function(event, currentRoute){
+            var templateDir = 'templates/',
+                home = templateDir + 'home.html';
+
+            if (currentRoute.templateUrl === home) {
+                $rootScope.$emit('body:class:add', 'home-page');
+            } else {
+                $rootScope.$emit('body:class:removeAll');
+            }
+        });
 
         $rootScope.auth = false;
         // keep user logged in after page refresh

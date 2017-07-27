@@ -17,6 +17,9 @@ body:before {
     width: 100%;
     height: 100%;
 }
+body.home-page:before {
+    background-image: url('../pics/home2.jpg');
+}
 
 .content {
     overflow: auto;
