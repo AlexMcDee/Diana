@@ -14,10 +14,7 @@
             .when('/', {
                 templateUrl: 'templates/home.html',
                 controller: 'HomeController',
-                controllerAs: 'vm',
-                data: {
-                    bodyClass: 'auth'
-                }
+                controllerAs: 'vm'
             })
             .when('/aboutme', {
                 templateUrl: 'templates/aboutme.html',
